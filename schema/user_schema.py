@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional
+
 class  UserSchema(BaseModel):
     id: Optional[str]
     name: str
@@ -7,3 +8,6 @@ class  UserSchema(BaseModel):
     user_passw:str
 
 
+class DataUser(BaseModel):
+    username: str
+    user_passw:str
